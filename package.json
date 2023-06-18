@@ -21,7 +21,7 @@
     "tslib": "^2.5.3",
     "typedoc": "^0.24.8"
   },
-  "homepage": "https://gh.expo.dev/events/",
+  "homepage": "https://gh.expo.moe/events/",
   "repository": {
     "type": "git",
     "url": "https://github.com/Exponential-Workload/events.git"
