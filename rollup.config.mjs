@@ -26,20 +26,6 @@ export default {
       sourcemap: true,
       footer: footer,
     },
-    {
-      file: 'dist/index.min.js',
-      format: 'esm',
-      sourcemap: true,
-      compact: true,
-      footer: footer,
-    },
-    {
-      file: 'dist/index.min.cjs',
-      format: 'cjs',
-      sourcemap: true,
-      compact: true,
-      footer: footer,
-    }
   ],
   plugins: [
     typescript({
