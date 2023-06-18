@@ -83,6 +83,24 @@ export class NodeEventEmitter {
     return Object.keys(this._event_listeners);
   }
 }
+/**
+  * A typesafe EventEmitter
+  * @example
+  * ```ts
+  * class SomeEmitter extends EventEmitter<{
+  *   'event': (arg1: string, arg2: number) => void;
+  * }> {}
+  * const emitter = new SomeEmitter();
+  * emitter.on('event', (arg1, arg2) => { // automatically typed string, number
+  *   console.log(arg1, arg2);
+  * });
+  * emitter.emit('event', 'hello', 123); // typechecked to string, number!
+  * emitter.emit('event', 'hello', 'hi'); // errors because 'hi' is not a number!
+  * emitter.emit('event', 'hello'); // errors because 2 arguments are required!
+  * emitter.emit('event', 'hello', 123, 456); // errors because only 2 arguments are allowed!
+  * ```
+  */
+// psst! this also works on vanilla nodejs event emitters!
 export default class EventEmitter<T extends Record<string, AnyFunc>> {
   private readonly emitter = new NodeEventEmitter();
   constructor() { }
