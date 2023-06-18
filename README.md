@@ -1,4 +1,6 @@
-# Pure TS Events
+# @3xpo/events
+
+[![documentation](https://img.shields.io/badge/-documentation-brightgreen.svg)](https://gh.expo.moe/events/) [![mom made pizza](https://img.shields.io/badge/type-safe-blue.svg)](https://typescriptlang.org/) [![mom made pizza](https://img.shields.io/badge/mom%20made-pizza-white.svg)](https://www.youtube.com/watch?v=IO9XlQrEt2Y)
 
 ## Installation
 
