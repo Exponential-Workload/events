@@ -5,5 +5,9 @@
     "declaration": true,
     "target": "es5",
     "module": "NodeNext",
-  }
+  },
+  "exclude": [
+    "test/**/*",
+    "node_modules/**/*"
+  ]
 }
