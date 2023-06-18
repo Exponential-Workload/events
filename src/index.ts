@@ -115,7 +115,7 @@ export class NodeEventEmitter {
   * ```
   */
 // psst! this also works on vanilla nodejs event emitters!
-export default class EventEmitter<T extends Record<string, AnyFunc>> {
+export class EventEmitter<T extends Record<string, AnyFunc>> {
   private readonly emitter = new NodeEventEmitter();
   constructor() { }
   public on<K extends (keyof T & (string | symbol))>(event: K, listener: T[K]): this {
@@ -154,3 +154,4 @@ export default class EventEmitter<T extends Record<string, AnyFunc>> {
     return this.emitter.eventNames() as (keyof T & (string | symbol))[];
   }
 }
+export default EventEmitter;
