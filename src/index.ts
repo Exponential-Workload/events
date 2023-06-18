@@ -1,4 +1,5 @@
-type AnyFunc = (...args: any[]) => any;
+/** Simply an internal type - Matches any function */
+export type AnyFunc = (...args: any[]) => any;
 /**
   * NodeJS EventEmitter without any special typesafety
   * Use {@link EventEmitter} for typesafe events (recommended)
