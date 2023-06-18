@@ -1,6 +1,6 @@
 {
   "name": "@3xpo/events",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS EventEmitter Polyfill in TS, with event type support",
   "main": "lib/index.min.cjs",
   "module": "lib/index.min.js",
@@ -17,5 +17,6 @@
     "@rollup/plugin-typescript": "^11.1.1",
     "rollup": "^3.25.1",
     "tslib": "^2.5.3"
-  }
+  },
+  "homepage": "https://github.com/Exponential-Workload/evemitter"
 }
