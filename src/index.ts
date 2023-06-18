@@ -1,5 +1,19 @@
 type AnyFunc = (...args: any[]) => any;
-/** NodeJS EventEmitter without any special typesafety */
+/**
+  * NodeJS EventEmitter without any special typesafety
+  * Use {@link EventEmitter} for typesafe events (recommended)
+  * @example
+  * ```ts
+  * const emitter = new NodeEventEmitter();
+  * emitter.on('event', (arg1: string, arg2: number) => { // not inferred!
+  *   console.log(arg1, arg2);
+  * });
+  * emitter.emit('event', 'hello', 123); // works as intended, however:
+  * emitter.emit('event', 'hello', 'hi'); // no errors; any, any
+  * emitter.emit('event', 'hello'); // no errors; any
+  * emitter.emit('event', 'hello', 123, 456); // no errors; any, any, any
+  * ```
+  */
 export class NodeEventEmitter {
   /** Event Listeners - First is the one listening, 2nd is one to call */
   private _event_listeners: Record<string | symbol, [AnyFunc, AnyFunc][]> = {};
