@@ -1,9 +1,8 @@
 {
   "name": "@3xpo/events",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "NodeJS EventEmitter Polyfill in TS, with event type support",
-  "main": "lib/index.cjs",
-  "module": "lib/index.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "rollup -c",

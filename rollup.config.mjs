@@ -20,12 +20,6 @@ export default {
       sourcemap: true,
       footer: footer,
     },
-    {
-      file: 'dist/index.cjs',
-      format: 'cjs',
-      sourcemap: true,
-      footer: footer,
-    },
   ],
   plugins: [
     typescript({
