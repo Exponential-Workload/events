@@ -1,7 +1,7 @@
 {
-  "name": "evemitter",
+  "name": "@3xpo/events",
   "version": "1.0.0",
-  "description": "NodeJS EventEmitter Polyfill, with event type support",
+  "description": "NodeJS EventEmitter Polyfill in TS, with event type support",
   "main": "lib/index.min.cjs",
   "module": "lib/index.min.js",
   "types": "lib/index.d.ts",

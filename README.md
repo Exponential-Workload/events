@@ -1,15 +1,15 @@
-# Pure JS Events
+# Pure TS Events
 
 ## Installation
 
 ```bash
-pnpm i evemitter
+pnpm i @3xpo/events
 ```
 
 ## Usage
 
 ```ts
-import EventEmitter from 'evemitter'
+import EventEmitter from '@3xpo/events'
 
 const emitter = new EventEmitter<{
   event1: (arg1: string, arg2: number) => void
